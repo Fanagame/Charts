@@ -61,7 +61,7 @@ open class RealmBaseDataSet: ChartBaseDataSet
         
         if _xValueField != nil
         {
-            _results = _results?.sortedResults(usingProperty: _xValueField!, ascending: true)
+            _results = _results?.sortedResults(usingKeyPath: _xValueField!, ascending: true)
         }
         
         notifyDataSetChanged()
@@ -199,7 +199,7 @@ open class RealmBaseDataSet: ChartBaseDataSet
         
         if _xValueField != nil
         {
-            _results = _results?.sortedResults(usingProperty: _xValueField!, ascending: true)
+            _results = _results?.sortedResults(usingKeyPath: _xValueField!, ascending: true)
         }
     
         notifyDataSetChanged()
